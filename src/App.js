@@ -43,7 +43,6 @@ class App extends Component {
               pagination={true}
               size={8}
               onData={(res)=>(
-                console.log(res),
                 {
                   "image": res.poster_path,
                   "title": res.original_title || " ",
