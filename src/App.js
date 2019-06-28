@@ -44,7 +44,8 @@ class App extends Component {
               size={8}
               onData={(res)=>(
                 {
-                  "image": res.poster_path,
+                  "image": "https://image.tmdb.org/t/p/w500" +
+                    res.poster_path,
                   "title": res.original_title || " ",
                   "description": 
                   "<span margin-right:5px;'>Date: " + res.release_date + "</span><br/><br/><div class='result-author' title='" + res.imdb_id + "'>imdb_id " + res.imdb_id + "</div><div class='result-author' title='" + res.genres_data + "'>Type " + res.genres_data + "</div>",
